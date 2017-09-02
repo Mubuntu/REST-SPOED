@@ -4,7 +4,7 @@
 
 __Waarom kunnen REST en SOAP eigenlijk niet met elkaar vergeleken worden, maw wat is het fundamentele verschil tussen beiden?__
 
-_REST is een  architectuur crud operatie die via een soort van interface op genoemde resource aan te passen/weergeven, soap actie is een uitgevoerde operatie die gebonden is aan een soap protocol
+_REST is een  architectuur, via een soort van interface kan je genoemde resources aan passen/weergeven, soap is een protocol, een uitgevoerde operatie die gebonden is aan een protocol.
 soap verleent je toegang tot bepaalde operaties (functies) niet effectief data zoals bij REST._
 ---
 ### OPGAVE: ###

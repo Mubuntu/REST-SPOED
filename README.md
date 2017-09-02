@@ -11,8 +11,8 @@ soap verleent je toegang tot bepaalde operaties (functies) niet effectief data z
 -------
 De spoedgevallendienst van St Vincentius heeft een nieuw registratiesysteem nodig. 
 Maak een standalone (dus niet met een servlet) REST WebService met het restlet.org framework 
-die toelaat om registraties in te geven (5 punten). De registraties worden weggeschreven in een bestand op schijf. 
-Maak een testclient met een main methode die een tweetal registraties aanmaakt (3 punten).
+die toelaat om registraties in te geven. De registraties worden weggeschreven in een bestand op schijf. 
+Maak een testclient met een main methode die een tweetal registraties aanmaakt.
 ---
 Een registratie bestaat uit :
 

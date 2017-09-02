@@ -4,10 +4,6 @@ import org.restlet.resource.ClientResource;
 
 public class RegistratieClient {
 
-	public RegistratieClient() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
 		  try {
           	ClientResource resource = new ClientResource("http://localhost:8282/registratie");

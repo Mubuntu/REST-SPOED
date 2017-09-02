@@ -9,7 +9,7 @@ import edu.ap.xml.XMLParser;
 public class RegistratieResource extends ServerResource {
 
 	@Get("html")
-	public String getRace() {
+	public String getRegistratie() {
 		String registratie_id = getAttribute("registratie_id");
 		XMLParser parser = new XMLParser();
 		return parser.getRegistratie(registratie_id);

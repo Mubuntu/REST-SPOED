@@ -12,4 +12,4 @@
 
   </registratie>
   
-<registratie diagnose="is van de trap gevallen." id="25" interventie="25/04/2011 23:45:02"><uri>registratie/25</uri><patient first_name="chris" geboortedatum="1965/11/14" id="12" last_name="christenes" verpleegkundige="mubuntu"/></registratie></registraties>
+</registraties>

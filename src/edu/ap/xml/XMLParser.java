@@ -13,10 +13,10 @@ import java.io.*;
 
 public class XMLParser {
 
-	private  String INPUTFILE = "C:\\Users\\Public\\TI\\REST-SPOED\\registraties.txt";
+	private static String INPUTFILE = "C:\\Users\\Public\\TI\\REST-SPOED\\registraties.txt";
 
 	/**
-	 * Get all races from the xml file and return them in html format
+	 * Get all registraties from the xml file and return them in html format
 	 */
 	public  String getRegistraties() {
 		File inputFile = new File(INPUTFILE);
@@ -29,10 +29,10 @@ public class XMLParser {
 			doc.getDocumentElement().normalize();
 			String result = "<h2>Registraties</h2>";
 
-			NodeList races = doc.getElementsByTagName("registratie");
+			NodeList registraties = doc.getElementsByTagName("registratie");
 
-			for (int i = 0; i < races.getLength(); i++) {
-				Node nNode = races.item(i);
+			for (int i = 0; i < registraties.getLength(); i++) {
+				Node nNode = registraties.item(i);
 				Element eElement = (Element) nNode;
 
 				result += "<br/><b>interventie : </b>" + eElement.getAttribute("interventie");
@@ -47,7 +47,7 @@ public class XMLParser {
 	}
 
 	/**
-	 * Get the race with race_id and return them in html format
+	 * Get the registratie with registratie_id and return them in html format
 	 */
 	public String getRegistratie(String registratie_id) {
 		File inputFile = new File(INPUTFILE);
@@ -60,11 +60,11 @@ public class XMLParser {
 			doc.getDocumentElement().normalize();
 			String result = "<h2>Registratie</h2>";
 
-			NodeList races = doc.getElementsByTagName("registratie");
+			NodeList registraties = doc.getElementsByTagName("registratie");
 
-			for (int i = 0; i < races.getLength(); i++) {
+			for (int i = 0; i < registraties.getLength(); i++) {
 
-				Node nNode = races.item(i);
+				Node nNode = registraties.item(i);
 				Element eElement = (Element) nNode;
 
 				if (eElement.getAttribute("id").equalsIgnoreCase(registratie_id)) {
@@ -81,7 +81,7 @@ public class XMLParser {
 	}
 
 	/**
-	 * Get all runners for the race with race_id and return them in valid html
+	 * Get all runners for the registratie with registratie_id and return them in valid html
 	 * format
 	 */
 	public  String getPatients(String registratie_id) {
@@ -105,8 +105,8 @@ public class XMLParser {
 				if (eElement.getAttribute("id").equalsIgnoreCase(registratie_id)) {
 					NodeList runners = eElement.getElementsByTagName("patient");
 					for (int j = 0; j < runners.getLength(); j++) {
-						Node runner = runners.item(j);
-						Element eElement2 = (Element) runner;
+						Node patient= runners.item(j);
+						Element eElement2 = (Element) patient;
 						result += "<br/><b>First Name : </b>" + eElement2.getAttribute("first_name");
 						result += "<br/><b>Last Name : </b>" + eElement2.getAttribute("last_name");
 						result += "<br/><b>geboortedatum : </b>" + eElement2.getAttribute("geboortedatum");
@@ -121,7 +121,7 @@ public class XMLParser {
 	}
 
 	/**
-	 * Delete the rqce with race_id and return all races in valid format
+	 * Delete the rqce with registratie_id and return all registraties in valid format
 	 */
 	public String deleteRegistratie(String registratie_id) {
 		File inputFile = new File(INPUTFILE);
@@ -133,11 +133,11 @@ public class XMLParser {
 			Document doc = dBuilder.parse(inputFile);
 			doc.getDocumentElement().normalize();
 
-			NodeList races = doc.getElementsByTagName("registratie");
+			NodeList registraties = doc.getElementsByTagName("registratie");
 
-			for (int i = 0; i < races.getLength(); i++) {
+			for (int i = 0; i < registraties.getLength(); i++) {
 
-				Node nNode = races.item(i);
+				Node nNode = registraties.item(i);
 				Element eElement = (Element) nNode;
 
 				if (eElement.getAttribute("id").equalsIgnoreCase(registratie_id)) {
@@ -156,7 +156,7 @@ public class XMLParser {
 	}
 
 	/**
-	 * Add a race and return all races in html format
+	 * Add a registratie and return all registraties in html format
 	 */
 	public String addRegistratie(String xml) {
 		File inputFile = new File(INPUTFILE);
@@ -195,7 +195,7 @@ public class XMLParser {
 	}
 
 	/**
-	 * Add a runner to race with race_id and return all races in html format
+	 * Add a patient to registratie with registratie_id and return all registraties in html format
 	 */
 	public  String addPatient(String registratie_id, String xml) {
 		File inputFile = new File(INPUTFILE);

@@ -1,11 +1,13 @@
-# REST-SPOED
------
+# REST-SPOED #  
+
 ![alt text](https://i.imgur.com/8uOMzYm.png "Logo Title Text 1")
 
- 
-in deze opgave maak ik gebruik van database om de waarden in uit te lezen (via JDBC) en het restlet framework om waarden via een webservice in te geven.
+__Waarom kunnen REST en SOAP eigenlijk niet met elkaar vergeleken worden, maw wat is het fundamentele verschil tussen beiden?__
+
+_REST is een  architectuur crud operatie die via een soort van interface op genoemde resource aan te passen/weergeven, soap actie is een uitgevoerde operatie die gebonden is aan een soap protocol
+soap verleent je toegang tot bepaalde operaties (functies) niet effectief data zoals bij REST._
 ---
-####OPGAVE:
+### OPGAVE: ###
 -------
 De spoedgevallendienst van St Vincentius heeft een nieuw registratiesysteem nodig. 
 Maak een standalone (dus niet met een servlet) REST WebService met het restlet.org framework 

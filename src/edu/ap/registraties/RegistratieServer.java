@@ -16,7 +16,7 @@ public class RegistratieServer {
 		    component.getDefaultHost().attach("/registratie", RegistratiesResource.class);
 		    component.getDefaultHost().attach("registratie/{registratie_id}", RegistratieResource.class);
 		    component.getDefaultHost().attach("/registratie/{registratie_id}/patient", RegistratiePatientResource.class);
-		    //component.getDefaultHost().attach("/race/{race_id}/runner/{runner_id}", RaceRunnerResource.class);
+		    //component.getDefaultHost().attach("/registratie/{registratie_id}/patient/{patient_id}", RegistratiePatientResource.class);
 		    
 			component.start();
 		} 

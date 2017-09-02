@@ -17,9 +17,7 @@ public class RegistratieApplication extends Application {
 		router.attach("/registratie", RegistratiesResource.class);
 		router.attach("/registratie/{registratie_id}", RegistratieResource.class);
 		router.attach("/registratie/{registratie_id}/patient", RegistratiePatientResource.class);
-		// router.attach("/race/{race_id}/runner/{runner_id}",
-		// RaceRunnerResource.class);
-
+		
 		return router;
 	}
 }

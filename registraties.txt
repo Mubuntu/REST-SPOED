@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><registraties>
+  <registratie diagnose="is aangereden geweest tegen 100km/u, twee benen gebroken." id="1" interventie="11/08/2016 14:20:02">
+    <diagnose>is aangereden geweest tegen 100km/u, twee benen gebroken.</diagnose>
+    <uri>registratie/1</uri>
+    <patient first_name="Bart" geboortedatum="1994/02/25" id="3" last_name="De Wever" verpleegkundige="Berta"/>
+
+  </registratie>
+  <registratie diagnose="is gewoon lelijk." id="2" interventie="11/04/2008 11:40:02">
+
+    <uri>registratie/2</uri>
+    <patient first_name="felica" geboortedatum="1998/02/25" id="4" last_name="Frison" verpleegkundige="jezus"/>
+
+  </registratie>
+  
+<registratie diagnose="is van de trap gevallen." id="25" interventie="25/04/2011 23:45:02"><uri>registratie/25</uri><patient first_name="chris" geboortedatum="1965/11/14" id="12" last_name="christenes" verpleegkundige="mubuntu"/></registratie></registraties>
